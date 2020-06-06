@@ -4,10 +4,12 @@ import "./App.css";
 
 function App() {
   const [contacts, setContacts] = useState([
-    { name: "Pippi",phone:"0123456789",email:"pippi@catworld.co.uk" },
-    { name: "Cat",phone:"07593539374",email:"cat@happypurring.co.uk" },
-    { name: "Felina",phone:"0964827485",email:"felina@cathouse.co.uk" },
+    {id:"1", name: "Pippi",phone:"0123456789",email:"pippi@catworld.co.uk" },
+    {id:"2", name: "Cat",phone:"07593539374",email:"cat@happypurring.co.uk" },
+    {id:"3",name: "Felina",phone:"0964827485",email:"felina@cathouse.co.uk" },
   ]);
+  contacts.sort();
+  console.log(contacts);
   const addContacts = (data)=>{
     setContacts(
       contacts.filter((contact)=>contact.name !==data.name).concat(data),)
