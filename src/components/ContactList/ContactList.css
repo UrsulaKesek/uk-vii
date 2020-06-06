@@ -1,0 +1,19 @@
+.contact-list-base{
+    background-color:rgb(75, 2, 90) ;
+    height:150px;
+    min-width: 50vw;
+}
+
+.contact-list-base th,td{
+ text-align: center;
+ padding:12px;
+ border:2px dotted  rgb(247, 3, 247);   
+}
+.edit{
+    display:flex;
+    flex-direction: column;
+}
+.delete{
+    display:flex;
+    flex-direction: column;
+}
