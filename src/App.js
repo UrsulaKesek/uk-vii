@@ -9,7 +9,8 @@ function App() {
     { name: "Felina",phone:"0964827485",email:"felina@cathouse.co.uk" },
   ]);
   const addContacts = (data)=>{
-    setContacts(contacts.concat(data))
+    setContacts(
+      contacts.filter((contact)=>contact.name !==data.name).concat(data),)
   }
   return (
     <div className="App">
