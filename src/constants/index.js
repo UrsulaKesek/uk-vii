@@ -1,1 +1,1 @@
-export const initialValue = {name:'',phone:'',email:''}
+export const INITIAL_VALUE = {name:'',phone:'',email:''}

@@ -1,6 +1,10 @@
 .form{
     background-color:rgb(75, 2, 90) ;
     height:150px;
-    min-width: 50vw;
+    min-width: 20vw;
     padding:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
